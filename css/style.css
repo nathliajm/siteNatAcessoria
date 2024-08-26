@@ -1,0 +1,118 @@
+body {
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+    justify-content: center;
+    background-image: linear-gradient(to right,rgb(1, 37, 99), #0088c2, rgb(113, 158, 235));
+    color: #ffffff;
+}
+
+header img{
+    display: inline-block;
+    vertical-align: middle;
+    height: auto;
+
+}
+header h1{
+    display: inline-block;
+    margin: 0;
+    vertical-align: right;
+}
+.logo{
+    width: 200px;
+}
+
+.foto{
+    border-radius: 100%;
+    width: 200px;
+    border: 3px solid rgb(61, 77, 248);
+}
+
+nav{
+    grid-area: nav;
+}
+
+nav ul{
+    padding: 7px;
+    margin: 20px;
+    list-style: none;
+}
+nav ul li a{
+    color:rgb(45, 2, 162);
+    text-decoration-color: #0f11a4;
+    display: inline-block;
+    margin-top: 35px;
+}
+
+a{
+    color: black;
+    text-decoration:underline ;
+}
+
+.principal {
+    background-color: rgb(136, 163, 211);
+    padding: 10px;
+    margin: 0 auto;
+    display: grid;
+    gap: 10px;
+    grid-template-areas:"nav nav section section section section aside"
+                        "nav nav section section section section aside"
+                        "nav nav section section section section aside"
+}
+
+
+section{
+    grid-area: section;
+    background-color: rgb(212, 223, 255);
+    padding: 50px;
+    border: 1px solid rgb(8, 0, 255)
+}
+
+.container {
+    display: flex;
+    align-items: center; /* Alinha verticalmente ao centro */
+}
+
+.container img {
+    margin-right: 10px; /* Espaço entre a imagem e o texto */
+}
+
+aside{
+    grid-area: aside;
+    width: 85%;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+footer {
+    background-color:#6371ca;
+    text-align: center;
+    padding: 10px;
+    border-top: 2px solid #0f41a4;
+}
+
+@media (min-width: 992px) {
+    main {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 767px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    button {
+        width: 100%;
+        margin: 8px 0;
+    }
+}

@@ -1,0 +1,30 @@
+#formulario {
+    max-width: 400px;
+    margin: 40px auto;
+    background-image: linear-gradient(to right,rgb(29, 82, 255), #0088c2, rgb(113, 158, 235));
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid #00346f;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;
+    display: inline-block;
+    margin: 6px 0;
+    padding: 10px;
+    border: 2px solid #080065;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type="submit"],[type="reset"]{
+    background-color: #47a0ff;
+    color: #000000;
+    padding: 14px 30px;
+    border-radius: 12px;
+}
